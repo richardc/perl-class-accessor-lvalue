@@ -12,9 +12,6 @@ sub make_accessor {
     };
 }
 
-# ro is easy - return a regular accessor and perl will bitch that it's
-# not lvalueable
-
 sub make_ro_accessor {
     my($class, $field) = @_;
 
@@ -29,8 +26,6 @@ sub make_ro_accessor {
         return $self->{$field};
     };
 }
-
-# wo will probably need Want
 
 sub make_wo_accessor {
     my($class, $field) = @_;
