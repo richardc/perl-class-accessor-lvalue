@@ -1,2 +1,6 @@
+0.10	Monday, 15th December, 2003
+	Implement proper proxy ties so that the main class correctly emulates
+	Class::Accessor
+
 0.01	Friday, 12th December, 2003
 	Initial CPAN release
