@@ -8,6 +8,7 @@ Module::Build
              'Test::More' => 0,
          },
          requires => {
+             'Want'            => 0,
              'Class::Accessor' => 0,
          },
          create_makefile_pl => 'traditional',
