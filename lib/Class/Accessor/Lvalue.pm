@@ -3,7 +3,7 @@ package Class::Accessor::Lvalue;
 use base qw( Class::Accessor );
 use Scalar::Util qw(weaken);
 use Want qw( want );
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 sub make_accessor {
     my ($class, $field) = @_;

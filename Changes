@@ -1,3 +1,7 @@
+0.11	Tuesday 16th December, 2003
+	Fix MANIFEST
+	add NINJA support.
+
 0.10	Monday, 15th December, 2003
 	Implement proper proxy ties so that the main class correctly emulates
 	Class::Accessor
