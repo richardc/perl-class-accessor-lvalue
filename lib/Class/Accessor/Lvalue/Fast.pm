@@ -2,7 +2,6 @@ use strict;
 package Class::Accessor::Lvalue::Fast;
 use base qw(Class::Accessor::Fast);
 use Want;
-our $VERSION = '0.01';
 
 =head1 NOTE
 
