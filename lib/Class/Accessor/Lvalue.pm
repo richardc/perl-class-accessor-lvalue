@@ -5,8 +5,8 @@ use Scalar::Util qw(weaken);
 use Want qw( want );
 our $VERSION = '0.01';
 
+# XXX this should probably be an array as Yuval pointed out
 tie my $rw, "Class::Accessor::Lvalue::Tied";
-
 sub _tied_accessor :lvalue {
     $Class::Accessor::Lvalue::Tied::field = shift;
     $Class::Accessor::Lvalue::Tied::self  = shift;
@@ -77,13 +77,11 @@ Class::Accessor::Lvalue - create Lvalue accessors
 
 =head1 DESCRIPTION
 
-This module is non-functional, see L<Class::Accessor::Lvalue::Fast>,
-distributed with this one) for one that is and a discussion as to why
-this is.
-
 =head1 AUTHOR
 
-Richard Clamp <richardc@unixbeard.net>
+Richard Clamp <richardc@unixbeard.net> with many thanks to Yuval
+Kogman for helping with the groovy lvalue tie magic used in the main
+class.
 
 =head1 COPYRIGHT
 
