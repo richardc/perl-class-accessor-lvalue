@@ -1,9 +1,9 @@
 use strict;
 package Class::Accessor::Lvalue;
+use base qw( Class::Accessor );
 use Carp qw(croak);
+use Want;
 our $VERSION = '0.01';
-
-croak "Class::Accessor::Lvalue is just a dummy package, you want Class::Accessor::Lvalue::Fast";
 
 1;
 __END__
