@@ -2,10 +2,10 @@
 use strict;
 use Test::More tests => 8;
 
-BEGIN { require_ok( 'Class::Accessor::Lvalue' ) }
+BEGIN { require_ok( 'Class::Accessor::Lvalue::Fast' ) }
 
 package Foo;
-use base qw( Class::Accessor::Lvalue );
+use base qw( Class::Accessor::Lvalue::Fast );
 __PACKAGE__->mk_accessors(qw( bar ));
 __PACKAGE__->mk_ro_accessors(qw( baz ));
 __PACKAGE__->mk_wo_accessors(qw( quux ));
